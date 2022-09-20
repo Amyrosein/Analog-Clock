@@ -93,10 +93,10 @@ body{
     transform-origin: bottom center;
     position: absolute;
     bottom: 50%;
-    left: 50%;
-    transform: translate(-50%);
+    right: 49.5%;
     z-index: 3;
     border-radius: 50% 50% 0 0 ;
+    transition: all 0.3s ease-in;
 }
 .hands .second{
     transform: rotate(10deg);
