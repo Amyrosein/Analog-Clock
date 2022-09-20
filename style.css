@@ -1,0 +1,115 @@
+@font-face {
+    font-family: VazirFD;
+    src: url(./Vazir-Medium-FD.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: VazirFD;
+    font-size: 3.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    height: 100vh;
+}
+
+.logo{
+    width: 8rem;
+    height: fit-content;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.clock{
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+    background-color: lightblue;
+    border-radius: 50%;
+    border: 0.3rem solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nums div{
+    position: absolute;
+    z-index: 2;
+    text-shadow: 0.3rem 0.3rem 2rem rgba(255, 0, 0, 0.694);
+    color: #fff;
+}
+
+.twelve{
+    top: 0.1rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.three{
+    right: 0.1rem;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.six{
+    bottom: 0.1rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.nine{
+    left: 0.1rem;
+    top: 50%;
+    transform: translate(50%,-50%);
+}
+
+.clock::before{
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 4
+}
+
+.hands div{
+    width: 0.4rem;
+    height: 15rem;
+    background-color: red;
+    transform-origin: bottom center;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 3;
+    border-radius: 50% 50% 0 0 ;
+}
+.hands .second{
+    transform: rotate(10deg);
+}
+
+.hands .hour{
+    transform: rotate(6deg);
+    height: 8rem;
+    background-color: #fff;
+}
+
+.hands .minute{
+    transform: rotate(150deg);
+    height: 12rem;
+    background-color: #fff;
+}
